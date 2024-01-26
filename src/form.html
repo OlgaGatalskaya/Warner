@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d50d610183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalizes.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/paginaPrincipal.css">
+    <link rel="stylesheet" href="./css/opinion.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="headeer">
+        <div class="container header__container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <img src="img/logo.png" width="130px" height="90px" alt="Logo">
+            <nav class="nav-menu">
+                <ul>
+                    <li class="li1 special-li"><a href="../index.html">Página principal</a></li>
+                    <li class="li2 special-li"><a href="./attractionsAll.html">Atracciones</a></li>
+                    <li class="li3 special-li"><a href="./opinion.html">Opinión</a></li>
+                    <li class="search">
+                        <input type="text" class="searchTerm">
+                        <button type="submit" class="searchButton">
+                            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="person-div"><a href="./form.html"><i class="fa-solid fa-user person"></i></a></div>
+        </div>
+    </header>
+
+
+    <section class="login-section">
+        <div class="container">
+            <div class="container-form">
+                <div class="tabs">
+                    <button class="tab">Iniciar sesión</button>
+                    <button class="tab">Registrarse</button>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <div class="login-tile">BIENVENIDO DE NUEVO</div>
+                <form class="login-form">
+                    <input class="email" type="email" placeholder="Correo" required>
+                    <input class="password" type="password" placeholder="Contraseña" required>
+                    <div class="remember-forgot">
+                        <div class="remember-div">
+                            <label for="remember">Recordarme</label>
+                            <input type="checkbox" id="remember">
+                        </div>
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="div-green"></div>
+
+    <footer class="footer">
+        <div>&#169 2023 | All Rights Reserved | Developed with <i class="fa-solid fa-heart icon-footer"></i> Volha Hatalskaya </div>
+    </footer>
+</body>
+</html>

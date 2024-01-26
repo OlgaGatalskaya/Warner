@@ -1,0 +1,205 @@
+.hero {
+    background-image: url(../img/imgPrincipal2.jpg);
+    height: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 80px;
+}
+
+.hero-content {
+    width: 550px;
+}
+
+.hero-text {
+    font-size: 32px;
+}
+
+
+.top4 {
+    margin-bottom: 15px;
+}
+.atracciones-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+}
+.atraccion-container {
+    text-align: center;
+}
+
+.atraccion-img{
+    margin-bottom: 10px;
+    border-radius: 3%;
+    background-image: url(../img/atraction1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 265px;
+    height: 245px;
+}
+
+.stars{
+    margin-bottom: 15px;
+}
+.stars i{
+    color: #E028C2;
+}
+
+.video {
+    height: 465px;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    z-index: -2;
+}
+
+
+
+.btn-YouTube {
+    width: 80px;
+    height: 60px;
+    background-color: #A5C926;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+}
+
+.atraccionsAll{
+    margin-bottom: 50px;
+}
+
+.title-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-atracctionesAll{
+    font-size: 24px;
+    border-radius: 30px;
+    height: 50px;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    background-color: #3371B1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Responsive*/
+@media (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+
+    .hero {
+        background-image: url(../img/roller-coaster2.jpg)
+    }
+
+    
+    .atraccion-img{
+        width: 220px;
+        height: 200px;
+    }
+
+    .video{
+        height: 380px;
+    }
+}
+
+@media (max-width: 991px){
+    .container {
+        width: 720px;
+    }
+
+    .atracciones-container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .atraccion-img{
+        width: 100%;
+    }
+
+    .btn-atracctionesAll {
+        font-size: 16px;
+    }
+
+    .video {
+        height: 405px;
+    }
+}
+
+@media (max-width: 767px){
+    .container {
+        width: 540px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+    .hero {
+        background: url(../img/swimming-pool.jpg) 
+        
+    }
+    .hero-text {
+        font-size: 24px;
+    }
+
+    .title-btn {
+        flex-direction: column;
+    }
+
+    .btn-atracctionesAll{
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 100%;
+    }
+
+    .header__container img {
+        margin-left: 20px;
+    }
+
+    .hero{
+        margin-bottom: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    .atracciones-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px
+    }
+
+    .video {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .btn-atracctionesAll{
+        width: 200px;
+        margin: auto;
+        padding: 5px 15px;
+    }
+}
+

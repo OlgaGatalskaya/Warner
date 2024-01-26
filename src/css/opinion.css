@@ -1,0 +1,233 @@
+
+.header-opinion {
+    margin-bottom: 80px;
+}
+
+.opinion-section{
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
+
+.opinion-container {
+    display: flex;
+}
+
+.left-container{
+    width: 40%;
+    margin-right: 50px;
+    border-right: solid 2px #F39100;
+}
+
+.img-opinion{
+    background-image: url(../img/opinion-img.jpg);
+    width: 400px;
+    height: 450px;
+    background-size:contain;
+    background-position: center;
+}
+
+.h3-opinion-star, .h3-opinion-dates {
+    margin-bottom: 20px;
+}
+
+.h3-opinion-title, .h3-opinion-text {
+    margin-bottom: 10px;
+}
+
+.input-title {
+    width: 100%;
+    height: 40px;
+    border:none;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+
+
+textarea{
+    width: 100%;
+    border:none;
+    border-radius:10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.btn-opinion{
+    font-size: 24px;
+    background: #3371B1;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+
+/*select fechas*/
+.dates-container {
+    font-family: Arial, sans-serif;
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.dates-container select {
+    position: relative;
+    padding: 10px 25px 10px 15px;
+    margin: 0; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #ff9900; 
+    font-size: 14px;
+    color: black; 
+    cursor: pointer; 
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+}
+.dates-container::after {
+    content: "\25BC";
+    position: absolute;
+    top:50%;
+    left: 33%;
+    transform: translateY(-50%); 
+    pointer-events: none; 
+    color: #F120C3; 
+}
+
+
+/*stars*/
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.rating > input {
+    display: none;
+}
+.rating > label {
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.rating > label:before {
+    content: "\f005"; /* Solid star */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black; 
+}
+.rating > input:checked ~ label:before {
+    color: #E028C2;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    color: #E028C2; /* Цвет звезды при наведении */
+}
+
+
+/*responsive*/
+@media (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+
+    .opinion-container{
+        justify-content: center;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .img-opinion{
+        width: 335px;
+    }
+
+    .dates-container::after{
+        left: 36%;
+    }
+
+    .rating > label{
+        font-size: 26px;
+    }
+
+
+}
+
+@media (max-width: 991px){
+    .container {
+        width: 720px;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    .left-container{
+        width: 50%;
+    }
+
+    .img-opinion{
+        width: 295px;
+    }
+
+    .dates-container::after{
+        left: 42%;
+    }
+
+}
+
+@media (max-width: 767px){
+    .container {
+        width: 540px;
+    }
+
+    .opinion-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-container{
+        width: 100%;
+        border: none;
+        border-bottom: solid 2px #F39100;
+        margin-bottom: 40px;
+    }
+
+    .img-opinion {
+        display: none;
+    }
+
+    .dates-container::after{
+        left: 62%;
+    }
+
+    .input-title, textarea{
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    h3{
+        font-size: 22px;   
+    }
+    .dates-container::after{
+        left: 65%;
+    }
+
+}
+

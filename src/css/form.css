@@ -1,0 +1,198 @@
+
+.header-form{
+    margin-bottom: 50px;
+}
+.container-form{
+    width: 970px;
+    text-align: center;
+    margin-top: 50px;
+    margin: auto;
+    padding: 50px 160px;
+    background-color: #FAB4F4;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.login-section {
+    padding: 20px;
+}
+
+.tabs {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 18px;
+}
+
+.tabs button:first-child{
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.tabs button {
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    font-size: 24px;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.line1{
+    position: absolute;
+    width: 185px;
+    height: 3px;
+    background-color: #A5C926;
+    left: 22%;
+    z-index: 3;
+}
+
+.line2{
+    position: absolute;
+    width: 180px;
+    height: 1px;
+    background-color: #F39100;
+    left: 50%;
+    z-index: 2;
+}
+
+.login-tile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.email, .password {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.login-form button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 45px;
+    background-color: #735CFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.remember-div{
+    display: flex;
+}
+.remember-div label {
+    margin-right: 10px;
+}
+
+.forgot-password {
+    display: block;
+    font-size: 14px;
+}
+
+.div-green {
+    background-color: #CBF2D1;
+    height: 240px;
+    margin-top: -90px;
+}
+
+
+/*responsive*/
+@media (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+
+    .container-form{
+        width: 850px;
+    }
+
+    .line1{
+        left: 16%
+    }
+}
+
+@media (max-width: 991px){
+    .container {
+        width: 720px;
+    }
+
+    .container-form{
+        width: 700px;
+        padding: 50px 15px;
+    }
+    
+    .line1 {
+        left: 23%;
+    }
+
+}
+
+@media (max-width: 767px){
+    .container {
+        width: 540px;
+    }
+    .login-section {
+        display: flex;
+    }
+
+    .container-form{
+        width: 500px;
+
+    }
+
+    .login-tile {
+        font-size: 26px;
+    }
+    .line1{
+        left: 11%;
+    }
+
+    .div-green {
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 100%;
+    }
+
+    .container-form{
+        width: 270px;
+
+    }
+
+    .line1, .line2{
+        display: none;
+    }
+    .longin-tile{
+        font-size: 20px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+}
+

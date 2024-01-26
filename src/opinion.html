@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d50d610183.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalizes.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/paginaPrincipal.css">
+    <link rel="stylesheet" href="./css/opinion.css"> 
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Opinión</title>
+</head>
+<body>
+    <header class="headeer">
+        <div class="container header__container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <img src="img/logo.png" width="130px" height="90px" alt="Logo">
+            <nav class="nav-menu">
+                <ul>
+                    <li class="li1 special-li"><a href="../index.html">Página principal</a></li>
+                    <li class="li2 special-li"><a href="./attractionsAll.html">Atracciones</a></li>
+                    <li class="li3 special-li"><a href="./opinion.html">Opinión</a></li>
+                    <li class="search">
+                        <input type="text" class="searchTerm">
+                        <button type="submit" class="searchButton">
+                            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="person-div"><a href="./form.html"><i class="fa-solid fa-user person"></i></a></div>
+        </div>
+    </header>
+
+    <section class="opinion-section">
+        <div class="container opinion-container ">
+            <div class="left-container">
+                <h2>Cuéntanos, ¿qué te ha parecido la atracción?</h2>
+                <div class="img-opinion"></div>
+                
+            </div>
+            <div class="right-container">
+                <form action="#">
+                    <h3 class="h3-opinion-star">¿Cómo valorarías la experiencia?</h3>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" class="star"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" class="star"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" class="star"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" class="star"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" class="star"></label>
+                    </div>
+                    <h3 class="h3-opinion-dates">¿Cuándo fue?</h3>
+                    <label class="dates-container" for="dates">
+                        <select name="dates" id="dates">
+                            <option value="" selected disabled>Selecciona una fecha</option>
+                            <option value="2024-01-01">01-02-2024</option>
+                            <option value="2024-01-02">02-02-2024</option>
+                            <option value="2024-01-03">03-02-2024</option>
+                        </select>
+                    </label>
+                    <h3 class="h3-opinion-title">Título de tu opinión</h3>
+                    <label for="title"><input type="text" id="title" class="input-title"></label>
+                    <h3 class="h3-opinion-text">Escribe tu opinión</h3>
+                    <label for="text-opinion"></label>
+                    <textarea name="text-opinion" id="text-opinion"  rows="10" class="input-text"></textarea>
+                    <div>
+                        <button class="btn-opinion">Enviar</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>&#169 2023 | All Rights Reserved | Developed with <i class="fa-solid fa-heart icon-footer"></i> Volha Hatalskaya </div>
+    </footer>
+</body>
+</html>

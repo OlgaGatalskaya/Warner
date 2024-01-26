@@ -1,0 +1,171 @@
+.headeer {
+    background-color: #A5C926;
+
+    width: 100%;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav-menu ul{
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/*Buscador*/
+.search{
+    width: 100%;
+    background-color: white;
+    border: 2px solid #F39100;
+    padding: 10px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 125px;
+    position: relative;
+}
+
+.search:focus-within{
+    box-shadow: 0 0 2px 2px #4d90f0;
+    border: 2px solid #4d90f0;
+}
+
+.searchTerm{
+    border: none;
+    width: 140px;
+}
+
+.searchButton{
+    border: none;
+    background-color: white;
+    padding: 0px;
+    margin-right: -10px;
+    position: absolute;
+    left: 130px;
+}
+
+.icon-search {
+    font-size: 22px;
+}
+
+.person {
+    font-size: 30px;
+}
+
+/*Responsive*/
+@media (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 991px){
+    .container {
+        width: 720px;
+    }
+.header__container {
+    justify-content: start;
+}
+.menu-icon{
+    display: block;
+}
+
+.li1, .li2, .li3 {
+    display: none;
+}
+
+.search {
+    margin: 0 100px;
+}
+
+.person-div {
+    margin-left: 50px;
+}
+
+.menu-icon {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    right: 5%;
+    z-index: 9999;
+}
+
+
+#menu-toggle:checked ~ .nav-menu .special-li {
+    background-color: #A5C926;
+    padding: 20px 30px; 
+    border-bottom: 1px solid #cccccc;
+    display: block; 
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    box-shadow: 4px 0px 5px rgba(0,0,0,0.1); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    z-index: 5; 
+}
+
+#menu-toggle:checked ~ .nav-menu .li1.special-li {
+    top: 14%; 
+    transform: translateX(0%);
+}
+
+#menu-toggle:checked ~ .nav-menu .li2.special-li {
+    top: 20%;
+    transform: translateX(0%);
+}
+
+#menu-toggle:checked ~ .nav-menu .li3.special-li {
+    top: 26%; 
+    transform: translateX(0%);
+}
+
+
+#menu-toggle:not(:checked) ~ .nav-menu .special-li {
+    transform: translateX(-100%);
+}
+
+
+
+}
+
+
+@media (max-width: 767px){
+    .container {
+        width: 540px;
+    }
+
+    .person-div {
+        margin-left: 30px;
+    }
+
+
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 100%;
+    }
+
+    .search{
+        display: none;
+    }
+
+}
